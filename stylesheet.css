@@ -1,0 +1,511 @@
+:root {
+  --primary-color: #23337a;
+  --secondary-color: #34479c;
+  --accent-color: #8392d4;
+  --background-light: #8392d4;
+  --white: #ffffff;
+  --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.15);
+  --border-radius: 10px;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-image: url('background.jpeg');
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+.site-header {
+  position: fixed;
+  width: 100%;
+  top: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar {
+  background: var(--white);
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.nav-bar_menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-bar_menu a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  transition: var(--transition);
+}
+
+.nav-bar_menu a:hover {
+  background: var(--secondary-color);
+  color: var(--white);
+}
+
+.Lingkungan {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 8rem 2rem 4rem;
+  min-height: 100vh;
+}
+
+.Lingkungan {
+      align-items: center;
+      gap: 3rem;
+      padding: 8rem 2rem 4rem;
+      min-height: 100vh;
+      background-color: white;
+}
+
+.Lingkungan_image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.Lingkungan_info {
+  flex: 1;
+  text-align: center;
+}
+
+.Lingkungan_group {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.Lingkungan_logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.Lingkungan_title {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.Lingkungan_heading {
+  font-size: 2.5rem;
+  text-align: left;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.Lingkungan_description {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.Lingkungan_button button {
+  background: var(--secondary-color);
+  color: var(--white);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.Lingkungan_button button:hover {
+  background: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.limbah {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 6rem 2rem;
+  background-color: var(--white);
+  margin: 2rem auto;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.limbah_desc {
+  flex: 1;
+}
+
+.limbah_desc h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.limbah_desc p {
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.limbah_image {
+  flex: 1;
+  text-align: center;
+}
+
+.limbah_image img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+}
+
+.limbah_image button {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.limbah_image button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.topik {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.topik h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.topik hr {
+  width: 100px;
+  height: 3px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 0 auto 3rem;
+}
+
+.topik_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.topik_content a {
+  display: block;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  color: black;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--secondary-color);
+}
+
+.topik_content a:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+
+.topik_content h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.topik_content p {
+  line-height: 1.6;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 6rem 2rem;
+  background-color: var(--white);
+  margin: 2rem auto;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.about_desc {
+  flex: 2;
+}
+
+.about_desc h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about_desc p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.about_vision {
+  background-color: var(--background-light);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--secondary-color);
+}
+
+.about_vision p {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.about_vision li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.about_image {
+  flex: 1;
+  text-align: center;
+}
+
+.about_image img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+}
+
+.about_group {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 55%;
+}
+
+.kontak {
+  padding: 6rem 2rem;
+  background-color: var(--white);
+  margin: 2rem auto;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.kontak h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.kontak-content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.kontak_form,
+.kontak_detail {
+  flex: 1;
+}
+
+.kontak_form h3,
+.kontak_detail h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.kontak_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kontak_form input,
+.kontak_form textarea {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.kontak_form input:focus,
+.kontak_form textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+.kontak_form button {
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: var(--transition);
+}
+
+.kontak_form button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.kontak_detail p {
+  line-height: 1.8;
+}
+
+.site-footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 3rem 0 1.5rem;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+.site-footer div {
+  box-shadow: none;
+}
+
+.site-footer_main {
+  text-align: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 2rem;
+}
+
+.site-footer-content {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.site-footer_info,
+.site-footer_links {
+  flex: 1;
+  min-width: 250px;
+}
+
+.site-footer_info p,
+.site-footer_links p {
+  margin-bottom: 1rem;
+}
+
+.site-footer_links ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.site-footer_links a {
+  
+  align-items: cente;
+  color: var(--white);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.site-footer {
+    position: relative;
+}
+
+.social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 20px;
+
+}
+ 
+  .social-links img {
+      width: 35px;
+      height: 35px;
+      object-fit: contain;
+  }
+
+
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .nav-bar_menu {
+    gap: 1rem;
+  }
+
+  .Lingkungan {
+    flex-direction: column;
+    padding: 8rem 1rem 2rem;
+  }
+
+  .Lingkungan_image {
+    max-width: 100%;
+  }
+
+  .Lingkungan_heading {
+    font-size: 2rem;
+  }
+
+  .limbah,
+  .about {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
